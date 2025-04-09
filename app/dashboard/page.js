@@ -50,7 +50,7 @@ export default function Home() {
               height={25}
             />
           </a>
-          <a href="https://github.com/CommanderieCondat/archive-app" >
+          <a href="https://github.com/sdelahaies/archives-app" >
             <Image
               aria-hidden
               src="/github-mark-white.svg"
