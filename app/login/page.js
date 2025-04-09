@@ -44,7 +44,14 @@ const LoginPage = () => {
         <div className="flex items-center justify-center h-screen bg-gray-900">
             <div className="bg-black p-8 rounded shadow-md max-w-sm w-full">
                 <img src="/logo.png" alt="Logo" className="h-30 mx-auto mb-4" />
-                <h2 className="text-xl mb-4 text-center">Login</h2>
+                <h2 className="text-xl mb-4 text-center">Explorer les Archives</h2>
+                <button
+                    className="w-full mb-3 bg-gray-500 text-white p-2 rounded"
+                    onClick={handleVisitorAccess}
+                >
+                    Consulter en tant que visiteur
+                </button>
+                <p className="mb-3">ou se connecter en tant qu'administrateur</p>
                 {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
                 <input
                     className="w-full mb-3 p-2 border rounded"
@@ -66,12 +73,7 @@ const LoginPage = () => {
                 >
                     Login
                 </button>
-                <button
-                    className="w-full bg-gray-500 text-white p-2 rounded"
-                    onClick={handleVisitorAccess}
-                >
-                    Continue as Visitor
-                </button>
+
             </div>
         </div>
     );
